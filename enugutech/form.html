@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form:class</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    input{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        display: block;
+        background-color: gray;
+        outline: 0;
+        border: 0;
+        color: white;
+        font-size: 20px;
+    }
+
+    form{
+        padding: 50px;
+        background-color: peachpuff;
+        width: 50%;
+        margin: auto;
+    }
+
+    section{
+        margin: auto;
+        background-color: rgb(176, 80, 249);
+    }
+
+</style>
+<body>
+
+    <section>
+    <form action="" method="">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" value="Lynda"> 
+    
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" placeholder="Lilian"> 
+    
+            <label for="pass">Password</label>
+            <input type="password" id="pass"> 
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" required> 
+    
+            <label for="">PIN</label>
+            <input type="number" min="2" max="10">
+
+            <label for="num">Put a number</label>
+            <input id="num" type="number" step="3">
+
+            <label for="fille">Choose a file</label>
+            <input type="file" multiple>
+    
+            <button type="submit">Submit</button>
+    </form>
+</section>
+</body>
+</html>
