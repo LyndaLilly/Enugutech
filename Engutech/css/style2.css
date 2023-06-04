@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sec1{
+    background: orange;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin: 30px;
+    /* border-radius: 30px; */
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px
+    /* border-radius: 50% */
+}
+
+img{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.sec2{
+    background: blue;
+    max-width: 500px;
+    height: 200px;
+    padding: 50px;
+    margin: 30px;
+  
+}
+
+.sec3{
+    background: purple;
+    min-width: 500px;
+    max-width: 900px;
+    height: 200px;
+    padding: 50px;
+    margin: 30px;
+  
+}
+

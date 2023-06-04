@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: black;
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    float: left
+}
+
+.a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    float: left;
+    transition: 2s all ease-in-out;
+ 
+}
+
+.a:hover{
+    background-color: red;
+
+}
+
+.ab{
+    background-color: bisque;
+    padding: 20px;
+    display: block;
+    text-decoration: none
+  
+}
+
+.ab:hover{
+    background-color: aqua
+}
+
+.dropdown-content{
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    width: 200px;
+    display: none;
+    animation-name: drop;
+    animation-duration: 2s;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+@keyframes drop{
+    0%{left: -300px}
+    100%{left: 400px}
+}
+
+
+/* div{
+    float: right
+} */
+
+.sec1{
+    border: 3px solid black;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.div1{
+    float: left;
+    width: 48%;
+    text-align: justify;
+    margin-right: 2%;
+  
+}
+
+.div2{
+    float: right;
+    width: 48%;
+  
+}
+
+.box1{
+    background-color: red;
+    width: 32%;
+    height: 200px;
+    margin-right: 2%;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    /* position: relative; */
+    z-index: 1;
+}
+.box2{
+    background-color: orchid;
+    width: 25%;
+    height: 200px;
+    margin-right: 2%;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.box3{
+    background-color: teal;
+    width: 32%;
+    height: 200px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    position: fixed
+}
+
+.box4{
+    background-color:orange;
+    width: 32%;
+    height: 200px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    position: sticky;
+    top: 30px;
+}
+
+.box5{
+    background-color:purple;
+    width: 32%;
+    height: 200px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    position: static;
+    top: 30px;
+}
+
+

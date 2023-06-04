@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 30px;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-direction: reverse;
+}
+
+/* @keyframes anim {
+    from{background-color: red;}
+    to{background-color: blue;}
+} */
+
+/* @keyframes anim {
+    0%{background-color: red;}
+    25%{background-color: blue;}
+    50%{background-color: orange;}
+    100%{background-color: purple;}
+} */
+
+@keyframes anim {
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: blue; left: 300px; top: 0px;}
+    50%{background-color: orange; left: 0; top: 300px;}
+    100%{background-color: purple; top: 0px; left: 0px;}
+}
+
+div{
+    background-color: green;
+    color: white;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    from{left: 0px;}
+    to{left: 300px;}
+    
+}
+
+.div2{
+    animation-timing-function: linear;
+    
+}
+.div3{
+    animation-timing-function: ease;
+    
+}
+.div4{
+    animation-timing-function: ease-in;
+    
+}
+.div5{
+    animation-timing-function: ease-out;
+    
+}
+.div6{
+    animation-timing-function: ease-in-out;
+    
+}
+
+a{
+    background-color: black;
+    color: yellow;
+    float: left;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    animation-name: navbar;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+@keyframes navbar {
+    0%{left: -900px;}
+    50%{left: 200px;}
+    100%{left: 0px;}
+}
+
+.sec1{
+    background-color: green;
+    color: white;
+    height: 100px;
+    width: 300px;
+    margin: 30px;
+    transition: all ease-in-out 1s;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.sec1:hover{
+    transform: translate(200px, 100px);
+}
+
+.sec2{
+    background-color: peru;
+    color: white;
+    height: 100px;
+    width: 300px;
+    margin: 30px;
+    transition: all ease-in-out 1s;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.sec2:hover{
+    transform: rotate(-360deg);
+}
+
+
+.sec3{
+    background-color: palevioletred;
+    color: white;
+    height: 100px;
+    width: 300px;
+    margin: 30px;
+    transition: all ease-in-out 1s;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.sec3:hover{
+    transform: scaleX(3);
+}
+
+.sec4{
+    background-color: red;
+    color: white;
+    height: 100px;
+    width: 300px;
+    margin: 30px;
+    transition: all ease-in-out 1s;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.sec4:hover{
+    transform: skew(-60deg);
+}
+
+.sec5{
+    background-color: red;
+    color: white;
+    height: 100px;
+    width: 300px;
+    margin: 30px;
+    transition: all ease-in-out 1s;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.sec5:hover{
+    transform: rotateZ(360deg);
+}
+
+img{
+    -webkit-box-flex: below;
+}
